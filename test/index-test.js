@@ -31,7 +31,7 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.log to have been called')
       console.log.restore()
       done()
-    }) 
+    })
     console.log("Why hasn't this worked")
   })
 
@@ -48,4 +48,3 @@ describe('index', () => {
     console.warn("Danger stranger")
   })
 })
-
