@@ -44,6 +44,7 @@ describe('index', () => {
       done()
     })
   })
+  console.error("HELP")
 })
 console.error("HALP")
 console.warn("Lets get this done better")
