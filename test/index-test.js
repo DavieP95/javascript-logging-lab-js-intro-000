@@ -18,6 +18,7 @@ describe('index', () => {
       console.error.restore()
       done()
     })
+    console.error("HALP")
   })
 
 
@@ -30,7 +31,8 @@ describe('index', () => {
       expect(spy).toHaveBeenCalled('expected console.log to have been called')
       console.log.restore()
       done()
-    })
+    }) 
+    console.log("Why hasn't this worked")
   })
 
   it('calls console.warn()', done => {
@@ -43,9 +45,7 @@ describe('index', () => {
       console.warn.restore()
       done()
     })
+    console.warn("Danger stranger")
   })
-  console.error("HELP")
 })
-console.error("HALP")
-console.warn("Lets get this done better")
-console.log("My Happy Beginnings")
+
